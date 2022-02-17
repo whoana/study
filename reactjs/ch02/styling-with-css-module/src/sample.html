@@ -1,0 +1,36 @@
+<script>
+  a = 0;
+  var b = 1;
+
+  let c = 2;
+  const d = 3;
+  
+
+
+const red = '빨간색';
+const blue = '파란색';
+function favoriteColors(texts, ...values) {
+   return texts.reduce((result, text, i) => `${result}${text}${values[i] ? `<b>${values[i]}</b>` : ''}`, '');
+}
+let msg = favoriteColors`제가 좋아하는 색은 ${red}과 ${blue}입니다.
+console.log(msg)
+
+
+  f1();
+  function f1() {
+    e = 4;
+    var f = 5; // The scope of f variable is in f1 fuction.
+    const g = 5;
+    let h = 6;
+    let fa = () => {
+      console.log(a, b, c, d, e, f);
+      console.log(g, h);
+    };
+    fa();
+  }
+
+  function f2() {
+    console.log(a, b, c, d, e, f);
+    console.log(g, h);
+  }
+</script>

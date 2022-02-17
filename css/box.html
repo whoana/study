@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #main {
+        margin: 0 auto;
+        /* width: 600px; */
+        max-width: 600px;
+        /* height: 400px; */
+        border: 1px solid orange;
+        /* margin: 10px 10px 10px 10px; */
+        padding: 2px 2px 2px 2px;
+        border-radius: 5px;
+      }
+
+      .simple {
+        width: 500px;
+        margin: 20px auto;
+        background-color: aquamarine;
+      }
+
+      .fancy {
+        width: 500px;
+        margin: 20px auto;
+        padding: 50px;
+        border-width: 10px;
+        background-color: green;
+      }
+
+      .simple2 {
+        width: 500px;
+        margin: 20px auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .fancy2 {
+        width: 500px;
+        margin: 20px auto;
+        padding: 50px;
+        border: solid blue 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main">
+      블록 레벨 엘리먼트의 width를 설정하면 컨테이너의 좌우 가장자리로 늘어나지
+      않게 할 수 있습니다. 그런 다음 좌우 마진을 auto로 설정해 해당 엘리먼트를
+      컨테이너 안에서 가로 중앙에 오게 할 수 있습니다. 엘리먼트는 여러분이
+      지정한 너비를 차지할 테고, 나머지 공간은 두 마진에 균등하게 나눠질
+      것입니다. 브라우저 창이 엘리먼트 너비보다 좁을 때 유일하게 문제가
+      발생합니다. 브라우저에서는 페이지에 가로 스크롤바를 만들어 이 문제를
+      해결합니다. 그럼 이 같은 상황을 개선해 봅시다...
+    </div>
+    <div class="simple">1저는 더 작습니다...</div>
+    <div class="fancy">1그리고 전 더 커요!</div>
+
+    <div class="simple2">2저는 더 작습니다...</div>
+    <div class="fancy2">2그리고 전 더 커요!</div>
+  </body>
+</html>

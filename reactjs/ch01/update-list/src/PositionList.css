@@ -1,0 +1,28 @@
+
+.container {
+    border: 1px;
+    border-color: blueviolet;
+    border-style: solid;
+    width: 300px;
+    height: 600px;
+}
+
+.container .row{
+    display: flex;
+}
+
+.container .row .block{
+    flex-grow: 1;
+    width: 30px;
+    height: 30px;
+    outline: auto;
+    
+}
+
+.empty {
+    color: antiquewhite;
+}
+
+.full {
+    background-color: black;
+}

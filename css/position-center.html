@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            
+            .container {
+                position: relative;
+                margin: 0 auto;
+                width: 500px;
+                height: 800px;
+                background-color: chocolate;
+            }
+
+            .contents-center {
+                position: absolute;
+                background-color: antiquewhite;
+                width: 400px;
+                height: 600px;
+                top:100px;
+                left: 50px;
+                padding: 5px;
+                border-radius: 10px;
+                border: solid 2px blueviolet;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="contents-center">
+                <p>
+                    absolute는 가장 다루기 까다로운 위치 지정 값입니다. absolute는 뷰포트에 상대적으로 위치가 지정되는 게 아니라 가장 가까운 곳에 위치한 조상 엘리먼트에 상대적으로 위치가 지정된다는 점을 제외하면 fixed와 비슷하게 동작합니다. 절대 위치가 지정된 엘리먼트가 기준으로 삼는 조상 엘리먼트가 없으면 문서 본문(document body)을 기준으로 삼고, 페이지 스크롤에 따라 움직입니다. "위치가 지정된" 엘리먼트는 position이 static으로 지정되지 않은 엘리먼트를 가리킨다는 사실을 기억하세요.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

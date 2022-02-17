@@ -1,0 +1,22 @@
+.playground {
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(162, 170, 170);
+}
+
+.playground div {
+    width: 30px;
+    height: 30px;
+    outline: auto;
+}
+
+.tetromino {
+    background-color: purple;
+}
+
+.freezed {
+    background-color: purple;
+}
